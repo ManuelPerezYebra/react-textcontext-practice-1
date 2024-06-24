@@ -1,9 +1,16 @@
 import { GlobalStyles } from "./GlobalStyles/GlobalStyles";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import UserProvider from "./providers/UserProvider";
 
 const App = () => {
+	
 	return <>
 	<GlobalStyles></GlobalStyles>
-	<h1>Núcleo de la aplicación</h1>;
+	<UserProvider>
+	<Header />
+	<Main />
+	</UserProvider>
 	
 	
 	</> 
